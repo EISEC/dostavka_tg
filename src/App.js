@@ -1,6 +1,7 @@
 import './App.css';
 import {useEffect} from "react";
 import Button from "./components/UI/Button";
+import Header from "./components/UI/Header/Header";
 
 const tg = window.Telegram.WebApp
 
@@ -13,10 +14,13 @@ function App() {
         tg.close()
     }
     return (
-        <div className={`container mx-auto px-6`}>
-            <h1>Work</h1>
-            <Button text={'Закрыть'} event={onClose}/>
-        </div>
+        <>
+            <Header/>
+            <main className={`container mx-auto px-6`}>
+                <h1>Work</h1>
+                <Button text={'Закрыть'} event={onClose}/>
+            </main>
+        </>
     );
 }
 
