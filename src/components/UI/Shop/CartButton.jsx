@@ -3,7 +3,7 @@ import { PiShoppingCartThin } from 'react-icons/pi';
 
 const CartButton = () => {
     return (
-        <button className={'p-2 text-2xl bg-amber-50 rounded-lg'}>
+        <button className={'p-2 text-2xl text-black bg-amber-50 rounded-lg'}>
             <PiShoppingCartThin/>
         </button>
     );
