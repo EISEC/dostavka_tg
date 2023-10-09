@@ -28,12 +28,12 @@ const ProductItem = () => {
                 {/*<p className={'max-h-[50px] overflow-hidden'}>Состав: <span className={'text-xs'}>лаваш, куриное филе, сыр твёрдый, капуста белокочанная, морковка корейская, огурцы маринованные, помидоры, майонез, сметана, зелень, чеснок, масло растительное.</span>*/}
                 {/*</p>*/}
                 <div className={'flex flex-row gap-2'}>
-                    <button className={'px-4 bg-amber-400 rounded-md'}>
+                    <button className={'px-4 bg-amber-400 rounded-md text-black'}>
                         <PiShoppingCartThin/>
                     </button>
                     <div className={'flex flex-row gap-1'}>
                         <ButtonSize fn={upSize} props={'+'}/>
-                        <input className={'w-full border-[1px] px-2 rounded-md'} type="number" value={size}/>
+                        <input className={'w-full text-black border-[1px] px-2 rounded-md'} type="number" value={size}/>
                         <ButtonSize fn={downSize} props={'-'}/>
                     </div>
                 </div>
